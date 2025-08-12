@@ -3,33 +3,43 @@
 This project implements a complete dog vs cat image classification system using ResNet50 transfer learning with TensorFlow/Keras. The implementation includes comprehensive training, evaluation, and visualization capabilities in a clean Python script format.
 
 
-## Quick Start
 
-### 1. Setup Environment
+# Quick Start
 
-First, run the setup script to install dependencies and check your environment:
+## 1. Setup Environment
+
+Before running the setup script, make sure it is executable:
 
 ```bash
-python setup_and_run.py
+chmod +x setup.sh
+````
+
+Now run the script to install dependencies and verify your environment:
+
+```bash
+./setup.sh
 ```
+
+This script will:
+
+* Install all required dependencies
+* Check your system environment
+* Prepare the project for development
+
 
 ### 2. Data Preparation
 
 Download the Kaggle Dogs vs Cats dataset:
 1. Go to [Kaggle Dogs vs Cats Competition](https://www.kaggle.com/c/dogs-vs-cats/data)
-2. Download `train.zip`
-3. Extract it to create a `train/` folder in your project directory
-4. The folder should contain files like `dog.1.jpg`, `cat.1.jpg`, etc.
+2. Download data
+3. Run the data splitting script to organize training and validation sets:
 
-Expected structure:
+
+```bash
+python split_data.py
 ```
-train/
-├── dog.1.jpg
-├── dog.2.jpg
-├── cat.1.jpg
-├── cat.2.jpg
-└── ... (25,000 total images)
-```
+
+
 
 ### 3. Run Training
 
