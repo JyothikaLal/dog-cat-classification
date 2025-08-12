@@ -2,25 +2,6 @@
 
 This project implements a complete dog vs cat image classification system using ResNet50 transfer learning with TensorFlow/Keras. The implementation includes comprehensive training, evaluation, and visualization capabilities in a clean Python script format.
 
-## Features
-
-- **Transfer Learning**: Uses pre-trained ResNet50 for feature extraction
-- **Data Augmentation**: Includes rotation and horizontal flipping
-- **Comprehensive Evaluation**: Confusion matrix, classification report, and sample predictions
-- **Training Visualization**: Plots training history, accuracy, and loss curves
-- **Fine-tuning**: Optional fine-tuning of top ResNet layers for better performance
-- **Model Persistence**: Save and load trained models
-- **Progress Tracking**: Real-time training progress and callbacks
-
-## Files Structure
-
-```
-├── dog_cat_classifier.py      # Main training script
-├── setup_and_run.py          # Setup and environment preparation
-├── requirements.txt          # Python dependencies
-├── Dog_cat_classification_v2.ipynb  # Original Jupyter notebook
-└── README.md                 # This file
-```
 
 ## Quick Start
 
