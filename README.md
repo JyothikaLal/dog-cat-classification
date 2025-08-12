@@ -115,43 +115,6 @@ Install all requirements with:
 pip install -r requirements.txt
 ```
 
-## Performance
-
-Expected performance on the Dogs vs Cats dataset:
-- **Initial Training**: ~95-97% accuracy
-- **After Fine-tuning**: ~98%+ accuracy
-
-## Troubleshooting
-
-### Common Issues
-
-1. **Out of Memory**: Reduce batch size or image size
-2. **No images found**: Check that your `train/` folder contains the extracted images
-3. **GPU not detected**: Install `tensorflow-gpu` for GPU acceleration
-
-### Memory Optimization
-
-If you encounter memory issues:
-- Reduce `batch_size` to 16 or 8
-- Reduce `image_size` to (128, 128)
-- Use fewer training samples for testing
-
-## Advanced Usage
-
-### Custom Data
-
-To use your own dataset:
-1. Organize images in format: `label.number.jpg` (e.g., `dog.1.jpg`, `cat.1.jpg`)
-2. Update the `data_path` parameter
-3. Modify label extraction logic in `load_and_preprocess_data()` if needed
-
-### Model Customization
-
-The `DogCatClassifier` class is designed for easy customization:
-- Modify the `create_model()` method for different architectures
-- Adjust data augmentation in the model creation
-- Change hyperparameters in the `train_model()` method
-
 ## License
 
 This project is open source and available under the MIT License.
